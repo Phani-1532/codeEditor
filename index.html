@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <nav class="navbar">
+            <h1 class="h1">Code Editor</h1>
+            <!-- Hamburger Icon for mobile screens -->
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#" id="new"><i class="fa-solid fa-code"></i> New</a></li>
+                <li><a href="#" id="save"><i class="fa-solid fa-save"></i> Save</a></li>
+                <li><a href="#" id="export"><i class="fa-solid fa-file-export"></i> Export</a></li>
+                <li><a href="#" id="import"><i class="fa-solid fa-file-import"></i> Import</a></li>
+                <li><a href="#" id="open"><i class="fa-solid fa-file-code"></i> Open</a></li>
+            </ul>
+            <div class="button">
+                <button id="run">Run <i class="fa-solid fa-greater-than"></i></button>
+            </div>
+        </nav>
+
+    </div>
+
+    <div class="wrapper">
+        <textarea name="" class="input" id="" placeholder="Write your code here..."></textarea>
+        <iframe src="" class="output"></iframe>
+    </div>
+    <input type="file" id="file-input" style="display: none;" />
+    <script src="script.js"></script>
+</body>
+
+</html>
